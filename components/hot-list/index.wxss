@@ -1,0 +1,35 @@
+.container {
+    background-color: #ffffff;
+    padding-top: 40rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-img {
+    width: 690rpx;
+    height: 90rpx;
+}
+.inner-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40rpx;
+}
+.inner-right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-img {
+    display: flex;
+    width: 346rpx;
+    height: 522rpx;
+}
+
+.right-img {
+    display: flex;
+    width: 400rpx;
+    height: 260rpx;
+}

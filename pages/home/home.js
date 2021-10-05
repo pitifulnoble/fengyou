@@ -11,16 +11,18 @@ Page({
         activityD: null,
         themeE: null,
         themeESpu: null,
-        themeF: null
+        themeF: null,
+        bannerG: null
     },
     onLoad: async function (options) {
         const theme = new Theme();
         const themeA = await theme.getHomeLocationA()
         const bannerB = await Banner.getHomeLocationB()
         const gridC = await Category.getHomeLocationC()
-        const activityD = await Activity.getHomeLocationD();
-        const themeE = await theme.getHomeLocationE();
-        const themeF = await theme.getHomeLocationF();
+        const activityD = await Activity.getHomeLocationD()
+        const themeE = await theme.getHomeLocationE()
+        const themeF = await theme.getHomeLocationF()
+        const bannerG = await Banner.getHomeLocationG()
         let themeESpu = null
         if (themeE.online) {
             const data = await Theme.getHomeLocationESpu();
@@ -35,7 +37,8 @@ Page({
             activityD: activityD,
             themeE: themeE,
             themeESpu: themeESpu,
-            themeF: themeF
+            themeF: themeF,
+            bannerG: bannerG
         })
     }
 });
