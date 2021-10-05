@@ -1,3 +1,4 @@
+@import "../../wxss/amos.wxss";
 .container {
     background-color: #ffffff;
     padding-top: 40rpx;

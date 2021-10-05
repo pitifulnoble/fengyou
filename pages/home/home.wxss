@@ -24,3 +24,10 @@
     height: 880rpx;
     display: flex;
 }
+
+.themeH {
+    margin-top: 20rpx;
+    width: 100%;
+    height: 880rpx;
+    display: flex;
+}

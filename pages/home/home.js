@@ -12,7 +12,8 @@ Page({
         themeE: null,
         themeESpu: null,
         themeF: null,
-        bannerG: null
+        bannerG: null,
+        themeH: null
     },
     onLoad: async function (options) {
         const theme = new Theme();
@@ -23,6 +24,7 @@ Page({
         const themeE = await theme.getHomeLocationE()
         const themeF = await theme.getHomeLocationF()
         const bannerG = await Banner.getHomeLocationG()
+        const themeH = await theme.getHomeLocationH()
         let themeESpu = null
         if (themeE.online) {
             const data = await Theme.getHomeLocationESpu();
@@ -31,14 +33,15 @@ Page({
             }
         }
         this.setData({
-            themeA: themeA,
-            bannerB: bannerB,
-            gridC: gridC,
-            activityD: activityD,
-            themeE: themeE,
-            themeESpu: themeESpu,
-            themeF: themeF,
-            bannerG: bannerG
+            themeA,
+            bannerB,
+            gridC,
+            activityD,
+            themeE,
+            themeESpu,
+            themeF,
+            bannerG,
+            themeH
         })
     }
 });

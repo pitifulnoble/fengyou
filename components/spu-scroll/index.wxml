@@ -4,7 +4,7 @@
     <scroll-view scroll-x>
         <view class="scroll-view">
             <block wx:for="{{spuList}}" wx:key="*this">
-                <view class="inner-container">
+                <view class="inner-container" hover-class="small-hover">
                     <image class="inner-img" src="{{item.img}}"></image>
                     <text class="inner-test">{{item.title.length >= 8 ? s.substring(item.title, 0, 7) + '...' : item.title}}</text>
                     <l-price
