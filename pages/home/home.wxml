@@ -1,12 +1,14 @@
 <view class="container">
-    <image class="top-theme" src="{{themeA.entrance_img}}"></image>
+    <image class="top-theme" src="{{themeA.entrance_img}}" wx:if="{{themeA.online}}"/>
     <swiper class="swiper-img" indicator-dots indicator-active-color="#157658" autoplay circular>
         <block wx:for="{{bannerB.items}}" wx:key="*this">
             <swiper-item>
-                <image class="swiper-img" src="{{item.img}}"></image>
+                <image class="swiper-img" src="{{item.img}}"/>
             </swiper-item>
         </block>
     </swiper>
     <s-category-grid grid="{{gridC}}"/>
-    <image class="activity" src="{{activityD.entrance_img}}"></image>
+    <image class="activity" src="{{activityD.entrance_img}}" wx:if="{{activityD.online}}"/>
+    <s-spu-scroll theme="{{themeE}}" spuList="{{themeESpu}}"/>
+    <image class="quality" src="{{themeF.entrance_img}}"></image>
 </view>

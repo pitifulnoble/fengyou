@@ -9,5 +9,8 @@
     "navigationBarTextStyle":"black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "l-price": "/miniprogram_npm/lin-ui/price/index"
+  }
 }
