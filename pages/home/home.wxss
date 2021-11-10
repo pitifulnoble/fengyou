@@ -31,3 +31,15 @@
     height: 880rpx;
     display: flex;
 }
+
+.spu-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20rpx;
+}
+.title-spu-bottom {
+    width: 690rpx;
+    height: 70rpx;
+    margin-bottom: 38rpx;
+}
