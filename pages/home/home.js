@@ -14,7 +14,8 @@ Page({
         themeESpu: null,
         themeF: null,
         bannerG: null,
-        themeH: null
+        themeH: null,
+        spuPaging: null,
     },
     onLoad: async function (options) {
         this.initAllData()
@@ -51,10 +52,24 @@ Page({
     },
     async initBottomSpuList() {
         const paging = SpuPaging.getLatestPaging()
-        console.log(paging)
+        this.data.spuPaging = paging
         const data = await paging.getMoreData()
         if (!data) {
             return
         }
-    }
+        wx.lin.renderWaterFlow(data.items)
+    },
+
+    onReachBottom: async function () {
+        const data = await this.data.spuPaging.getMoreData()
+        if (!data) {
+            return
+        }
+        wx.lin.renderWaterFlow(data.items)
+        if (!data.moreData) {
+            this.setData({
+                loadingType: 'end'
+            })
+        }
+    },
 });

@@ -37,7 +37,10 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20rpx;
+    padding-top: 30rpx;
+    background-color: #ffffff;
 }
+
 .title-spu-bottom {
     width: 690rpx;
     height: 70rpx;

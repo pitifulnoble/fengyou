@@ -76,7 +76,6 @@ export class Paging {
         const params = `start=${this.start}&count=${this.count}`
         if (url.includes('?')) {
             url += '&' + params
-            // contains
         } else {
             url += '?' + params
         }
